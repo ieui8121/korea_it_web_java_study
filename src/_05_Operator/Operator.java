@@ -35,7 +35,6 @@ public class Operator {
 * 가능하면 "탑승 가능" 불가능 하면 "탑승 불가능" 출력/
  */
         int height = 140;
-        String result (height >= 120) ? "탑승 가능" : "탑승 불가능";
-        System.out.println(result);
+
     }
 }

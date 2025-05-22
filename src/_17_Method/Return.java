@@ -20,5 +20,6 @@ public class Return {
         String myName = getName();
         System.out.println(myName);
         System.out.println(getAge());
+        // 123
     }
 }

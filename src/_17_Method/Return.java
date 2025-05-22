@@ -2,7 +2,7 @@ package _17_Method;
 
 public class Return {
     public static String getName() {
-        String name ="이동윤";
+        String name ="박수호";
         return name;
     }
 

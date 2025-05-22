@@ -17,6 +17,7 @@ public class Array02 {
         //enhanced for (for-each) 향상된 for문
         for (String  country : countries) {
             System.out.println(country);
+            //
         }
     }
 }

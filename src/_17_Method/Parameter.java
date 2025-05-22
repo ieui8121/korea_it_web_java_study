@@ -1,48 +1,45 @@
-//package _17_Method;
-//
-//public class Parameter {
-//    public static void sayHello() {
-//        //sayhello라는 이름을 가진 메소드
-//        //안녕을 출력
-//        System.out.println("안녕");
-//
-//    }
-//
-//        //세개의 정수를 전달하여 편균을 출력하는 메소드
-//        //getAvg(80. 90. 100)
-//
-////    public static void getAvg (int a, int b, int c) {
-////            System.out.println("평균은" (a+b+c) / 3);
-//        }
-//
-//
-//
-//        //정수를 전달하여 짝수인지 홀수인지 판별하는 메소드
-//        //isEven(2);
-//
-////        public class NumberCheck {
-////
-////            // 정수를 전달하여 짝수인지 홀수인지 판별하는 메소드
-////            public static void isEven(int num) {
-////                if (num % 2 == 0) {
-////                    System.out.println(num + "은 짝수입니다.");
-////                } else {
-////                    System.out.println(num + "은 홀수입니다.");
-////                }
-////            }
-////
-////            // 메인 메소드에서 호출 예시
-////            public static void main(String[] args) {
-////                isEven(2);  // 2는 짝수입니다.
-////                isEven(7);  // 7은 홀수입니다.
-////            }
-////        }
-////
-//
-//
-//
-//
-//
-//
-//    }
-//}
+package _17_Method;
+
+public class Parameter {
+    public static void power(int number) {
+        //거듭제곱을 하는 메소드
+        //매개변수를 전달 받아서 해당 매개변수를 거듭제곱
+        int result = number * number;
+        System.out.println(number + "의 2승은 " + result + " 입니다");
+    }
+
+    public static void powerByExp(int number, int exponent) {
+        int result = 1;
+        for (int i = 0; i < exponent; i++) {
+            result *= number;
+        }
+        System.out.println(number + "의 " + exponent + "승은 " + result + " 입니다");
+    }
+
+    public static void getAvg(int a, int b, int c) {
+        System.out.println("평균은 " + (a + b + c) / 3);
+    }
+
+    public static void isEven(int a) {
+        String result = (a % 2 == 0) ? "짝수임" : "홀수임";
+        System.out.println(result);
+    }
+
+    public static void main(String[] args) {
+        //Parameter
+        //매개변수, 전달값
+        int num = 4;
+        power(num);
+
+        powerByExp(2, 4);
+
+        getAvg(80, 90 ,100);
+        isEven(11);
+
+    }
+
+    //세개의 정수를 전달하여 평균을 출력하는 메소드
+
+    //정수를 전달하여 짝수인지 홀수인지 판별하는 메소드
+    //단, 삼항연산자를 쓸 것
+}

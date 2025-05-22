@@ -2,11 +2,11 @@ package _17_Method;
 
 public class Return {
     public static String getName() {
-        String name ="박수호";
+        String name = "이동윤";
         return name;
     }
 
-    public static  int getAge() {
+    public static int getAge() {
         int age = 27;
         return age;
     }
@@ -19,7 +19,7 @@ public class Return {
 
         String myName = getName();
         System.out.println(myName);
-        System.out.println(getAge());
-        // 123
+        int myAge = getAge();
+        System.out.println(myAge);
     }
 }

@@ -43,7 +43,7 @@ public class Array01 {
         numbers[2] = 3;
         double[] doubles ={12.34, 23.45, 12.55, 45,87};
         boolean[] booleans = {true, false, false, true};
-        //1
+        //12
 
     }
 }

@@ -6,8 +6,10 @@ public class CarMain {
 
         Car car2 = new Car("아반떼");
 
-        Car car3 = new Car("싼타페", 2025, "White");
+        Car car3 = new Car("싼타페", 2025, "white");
 
         car3.startCar();
+        car3.drive();
+
     }
 }

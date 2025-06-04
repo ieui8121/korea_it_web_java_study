@@ -10,18 +10,18 @@ public class Main {
         //toString 오버라이드해서 정보 모두 출력되도록
         UserEntity userEntity = new UserEntity();
         userEntity.setUserId(1);
-        userEntity.setUsername("박수호");
-        userEntity.setAge(18);
-        userEntity.setEmail("ieui8121@naver.com");
+        userEntity.setUsername("이동윤");
+        userEntity.setAge(27);
+        userEntity.setEmail("dongyoon7212@naver.com");
 
         System.out.println(userEntity);
 
-        userEntity.getUserId();
-        userEntity.getUsername();
-        userEntity.getAge();
-        userEntity.getEmail();
+        UserEntityLombok userEntityLombok = new UserEntityLombok();
+        userEntityLombok.setUserId(2);
+        userEntityLombok.setUsername("홍길동");
+        userEntityLombok.setAge(18);
+        userEntityLombok.setEmail("gildong@gmail.com");
 
-    //    System.out.println(UserEntityLombok);
-
+        System.out.println(userEntityLombok);
     }
 }

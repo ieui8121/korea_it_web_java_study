@@ -15,6 +15,11 @@ public class Main {
         tvRemoteController.onPressedChannelUpButton();
         tvRemoteController.onDownVolumeDownButton();
         tvRemoteController.onDownChannelDownButton();
-
+        Button[] buttons = {
+                new ChannelDownButton(),
+                new ChannelUpButton(),
+                new VolumeDownButton(),
+                new VolumeUpButton()
+        };
     }
 }

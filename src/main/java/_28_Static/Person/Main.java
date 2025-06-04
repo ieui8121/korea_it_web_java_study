@@ -5,7 +5,7 @@ public class Main {
         Person person1 = new Person("홍길동");
         Person person2 = new Person("김춘향");
 
-        person1.sayHello(); //인스터드 메소드
+        person1.sayHello(); //인스턴스 메소드
         person2.sayHello();
 
         Person.showPopulation(); //클래스 메소드(static)

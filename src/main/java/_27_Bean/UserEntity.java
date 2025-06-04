@@ -14,6 +14,8 @@ public class UserEntity {
     public UserEntity() {
     }
 
+
+
     public int getUserId() {
         return userId;
     }

@@ -84,7 +84,7 @@ public class StrMap {
         System.out.println("키기준 역순 정렬 : " + entryList1);
 
         //Key Set 출력
-        Set<String> keySet = strMap1 .keySet();
+        Set<String> keySet = strMap1.keySet();
         System.out.println(keySet);
 
     }

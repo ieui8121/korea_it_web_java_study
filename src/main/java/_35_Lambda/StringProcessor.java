@@ -1,8 +1,6 @@
 package _35_Lambda;
 
-public class StringProcessor {
-
-    public String process(String input) {
-        return input;
-    }
+@FunctionalInterface
+public interface StringProcessor {
+    String process(String input);
 }

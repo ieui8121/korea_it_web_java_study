@@ -1,11 +1,8 @@
 package _35_Lambda;
 
-import java.util.Objects;
-
 public class CalculatorMain {
     public static int operate(int a, int b, Calculator c) {
         return c.calculate(a, b);
-
     }
 
     public static void main(String[] args) {
@@ -20,16 +17,6 @@ public class CalculatorMain {
         System.out.println("2 * 3 = " + operate(2, 3, mul));
         System.out.println("2 / 3 = " + operate(2, 3, div));
 
-        Calculator div2 = new Calculator() {
-            @Override
-            public int calculate(int a, int b) {
-                return a / b;
-            }
-        };
-
-        Calculator div4 = (x, y) -> x / y;
-
-
         Calculator div3 = (x, y) -> {
             if(y == 0) {
                 System.out.println("0으로 나눌 수 없습니다.");
@@ -37,6 +24,6 @@ public class CalculatorMain {
             }
             return x / y;
         };
-        System.out.println("2 / 0 =" + operate(2, 0, div3));
+        System.out.println("2 / 0 = " + operate(2, 0, div3));
     }
 }

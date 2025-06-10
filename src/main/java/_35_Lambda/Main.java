@@ -61,15 +61,14 @@ public class Main {
         //1.supplier
         Supplier<String> stringSupplier = () -> "Hello, World";
         //2.consumer
-        Consumer<String> stringConsumer = (message) -> System.out.println("메시지 :" + message);
+        Consumer<String> stringConsumer = (message) -> System.out.println("메시지 : " + message);
         String message = stringSupplier.get();
         stringConsumer.accept(message);
     }
-        //익명 클래스 => 즉석에서 해당 클래스나 인터페이스의 매소드를 재정의해서 사용
-        // -----------메소드가 하나일수도 여러개일수도
-        //람다식 => 메소드가 하나만 있는 인터페이스를 재정의해서 사용할때 표현식
-        // () -> 한줄 코드;
-        // () -> {
-        //      여러줄 코드
-        // }
+
+    //람다식 => 메소드가 하나만 있는 인터페이스(함수형 인터페이스)를 재정의해서 사용할때 표현식
+    // () -> 한줄 코드;
+    // () -> {
+    //      여러줄 코드
+    //  }
 }

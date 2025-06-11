@@ -1,6 +1,6 @@
 package _34_Exception;
 
-public class Exception {
+public class Exception extends Throwable {
     public Exception(String message) {
     }
 
